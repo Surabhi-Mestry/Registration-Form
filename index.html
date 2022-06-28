@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div id="entry">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="inp_name" class="width clr_inp">
+            <br>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="inp_email" class="width clr_inp">
+            <br>
+
+            <label for="img">Image</label> 
+            <input type="file" name="img" id="inp_img" accept="image/*" class="clr_inp">
+            <br>
+
+            <label for="gender">Gender</label>
+            <div class="radio_align">
+                <input type="radio" name="gender" id="inp_male" value="Male" class="gen"><label for="inp_male"> Male </label><br>
+                <input type="radio" name="gender" id="inp_female" value="Female" class="gen"><label for="inp_female"> Female </label><br>
+                <input type="radio" name="gender" id="inp_other" value="other" class="gen"><label for="inp_other"> Prefer not to say </label>
+            </div>
+            <br>
+
+            <label for="DOB">Date of Birth</label>
+            <input type="date" name="DOB" id="inp_dob" class="width clr_inp">
+            <br>
+
+            <div class="buttons">
+                <button type="submit" id="submit">SUBMIT</button>
+                <button id="clear">CLEAR</button>
+            </div>
+        </div>
+        <div id="output">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
